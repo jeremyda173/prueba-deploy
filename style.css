@@ -1,244 +1,67 @@
-/* Estilos básicos para el menú */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #584585;
-    padding: 10px 0; /* Mantiene el padding vertical */
-    position: fixed; /* Fijar el menú en la parte superior */
-    width: 100%; /* Cambiado a 100% para ocupar todo el ancho */
-    top: 0; /* Sin cambio */
-    left: 0; /* Eliminado para simplificar, ya que es 0 por defecto */
-    z-index: 1000;
-}
-
-.logo img {
-    width: 100px; /* Ajusta el tamaño según lo que necesites */
-    height: auto; /* Mantiene la proporción de la imagen */
-}
-
-
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: black;
-}
-
-/* Estilos para el menú móvil */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}
-/* fin dle menu 
-
-
-
-/* Estilos para el formulario de citas */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    padding-top: 80px; /* Añadir espacio para el menú fijo */
-}
-
-.appointment-form {
-    background-color: #ffffff; /* Color de fondo */
-    padding: 40px; /* Un poco menos de padding para que se vea más compacto */
-    border-radius: 15px; /* Bordes más redondeados */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
-    width: 350px; /* Ampliar un poco el ancho */
+    background-color: #f4f4f9;
+  }
+  
+  .login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
     text-align: center;
-    transition: transform 0.3s; /* Transición suave para el hover */
-}
-
-
-
-.appointment-form h2 {
-    color: #333; /* Color del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    font-size: 24px; /* Aumentar el tamaño de fuente del título */
-}
-
-label {
-    display: block;
-    text-align: left;
-    margin: 15px 0 5px; /* Aumentar margen superior para más espacio */
-    color: #555; /* Color de las etiquetas */
-    font-weight: bold; /* Hacer las etiquetas en negrita */
-}
-
-input {
-    width: 100%;
-    padding: 12px; /* Aumentar el padding para mayor comodidad */
-    margin-bottom: 15px; /* Aumentar el margen inferior */
-    border-radius: 5px;
-    border: 1px solid #ccc; /* Color del borde */
-    transition: border 0.3s; /* Transición para el borde */
-}
-
-/* Cambio de borde al enfocar */
-input:focus {
-    border-color: #45b39d; /* Cambiar el color del borde al enfocar */
-    outline: none; /* Eliminar el contorno por defecto */
-}
-
-button {
-    background-color: #584585; /* Color del botón */
-    color: white;
-    border: none;
-    padding: 12px 20px; /* Aumentar padding del botón */
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px; /* Aumentar tamaño de fuente del botón */
-    transition: background-color 0.3s; /* Transición suave para el hover */
-}
-
-button:hover {
-    background-color: #584585; /* Color al pasar el mouse */
-}
-
-.confirmation {
-    margin-top: 20px;
-    color: #584585; /* Color del mensaje de confirmación */
-    font-size: 16px; /* Tamaño de fuente */
-    font-weight: bold; /* Negrita para el mensaje de confirmación */
-}
-
-.appointment-form h2 {
-    color: #333;
-}
-
-label {
+  }
+  
+  h1 {
+    color: #1c5992;
+    margin-bottom: 20px;
+  }
+  
+  label {
     display: block;
     text-align: left;
     margin: 10px 0 5px;
-    color: #555;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-button {
-    background-color: #584585;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    background-color: #584585;
-}
-
-.confirmation {
-    margin-top: 20px;
-    color: black;
-}
-.form-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 50px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.logo-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-    width: 180px; /* Ajusta el tamaño según sea necesario */
-    height: auto;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-form input {
+    color: #333;
+  }
+  
+  input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1c5992;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #17487b;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #message {
+    color: #1c5992;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
